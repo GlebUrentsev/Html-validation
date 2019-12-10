@@ -1,0 +1,65 @@
+//colors
+$cean: #6979F8;
+$black: #3B3D43;
+$grey:#F7F5F9;
+$light_grey:#D0C9D6;
+$plum: #9478b5;
+
+body{
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+//main form style
+.form{
+	background: $grey; 
+	margin: 0 auto;
+	width: 481px;
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
+	border-radius: 12px;
+	&-data>input{
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 25px;
+		width: 401px; 
+		height: 48px;
+		border-radius: 6px;
+		border: 0;
+		outline: 0;	
+		padding-left: 15px;
+	}
+	&-data > input:focus{
+		border: 1px solid $plum;
+	}
+	&-heading{
+		margin-left: 40px;
+		padding-top: 40px;
+		font-weight: bold;
+		font-size: 24px;
+		color: $black;
+	}
+	&-data{
+		padding-bottom: 40px;
+	}
+}
+//Button send style
+.btn{
+	display: block;
+	width: 401px; 
+	border:0;
+	margin:0 auto;
+	background: $cean;
+	padding: 13px 0;
+	cursor: pointer;
+	color:white;
+	border-radius: 5px;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+//Style for placeholder in input
+input::placeholder {
+    color: $light_grey;
+    font-size: 15px;
+} 

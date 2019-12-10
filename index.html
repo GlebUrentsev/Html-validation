@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Форма для ДС</title>	
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">	
+</head>
+
+<body>
+	<div class="form">
+			<p class="form-heading">Задать вопрос</p>
+			 <form  method="POST" class="form-data">
+			  <input type="text" name="name" placeholder="Фамилия Имя Отчество *" pattern="^[А-Яа-яЁё\s-]+$" required>
+			   <input type="tel" name="phone" placeholder="Телефон *" pattern="^[ 0-9\s+-]+$" required>
+				<input type="email" name="email" placeholder="Email" required>
+				<button class="btn" type="sumbit">Отправить запрос</button>
+			</form>
+	</div>	
+</body>
+<script src="js/app.js"></script>
+</html>
